@@ -55,3 +55,10 @@ Instead of dropping all your local changes and commits, fetch the latest history
 git fetch origin
 
 git reset --hard origin/master
+
+
+Delete a remote: 
+
+git push --delete repository branchname
+
+EX: git push --delete origin Tier3DatabaseServer
