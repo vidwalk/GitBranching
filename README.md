@@ -62,3 +62,14 @@ Delete a remote:
 git push --delete repository branchname
 
 EX: git push --delete origin Tier3DatabaseServer
+
+Revert a commit:
+
+git revert -m n <commit-hash> 
+git commit -m "Reverting the last commit which messed the repo."
+git push -u origin master
+
+EX: 
+git revert -m 1 <commit-hash> 
+git commit -m "Reverting the last commit which messed the repo."
+git push -u origin master
